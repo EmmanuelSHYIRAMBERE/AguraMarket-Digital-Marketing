@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "739182960949",
+    "project_id": "aguramarket-app",
+    "storage_bucket": "aguramarket-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739182960949:android:10ac35da01a8048504ac7c",
+        "android_client_info": {
+          "package_name": "com.emmanuelshyirambere.aguramarketapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs9uFgmNOGJOoy8fUEjWqNrNMwIThaTJE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

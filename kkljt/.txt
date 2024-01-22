@@ -1,0 +1,19 @@
+  // const handleSubmit = async (product, { resetForm }) => {
+  //   setProgress(0);
+  //   setUploadVisible(true);
+  //   const result = await listingsApi.addProduct(
+  //     { ...product, location },
+  //     (progress) => setProgress(progress)
+  //   );
+
+  //   if (!result.ok) {
+  //     setUploadVisible(false);
+  //     console.error(
+  //       "Error saving product:",
+  //       result.originalError || result.problem
+  //     );
+  //     return alert("Could not save this product");
+  //   }
+
+  //   resetForm();
+  // };

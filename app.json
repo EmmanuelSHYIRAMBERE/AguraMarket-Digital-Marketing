@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "AguraMarket App",
+    "slug": "aguramarket-app",
+    "description": "AguraMarket App is your ultimate platform for seamless buying and selling experiences. Whether you're looking to sell your products or discover new ones, our app ensures efficiency and convenience in every transaction. Explore a user-friendly interface designed to enhance your selling journey or find the perfect products with ease. Join AguraMarket and elevate your online buying and selling experience today.",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./app/assets/images/icon.png",
+    "userInterfaceStyle": "light",
+    "notification": { "iosDisplayInForeground": true },
+    "splash": {
+      "image": "./app/assets/images/image/hero-banner.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./app/assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.emmanuelshyirambere.aguramarketapp",
+      "googleServicesFile": "./google-services.json"
+    },
+    "web": {
+      "favicon": "./app/assets/images/favicon.png",
+      "bundler": "metro"
+    },
+    "sdkVersion": "49.0.0",
+    "extra": {
+      "eas": {
+        "projectId": "6b568b55-4908-4536-8b00-963a2382c682"
+      }
+    },
+    "owner": "emmanuelshyirambere"
+  },
+  "name": "AguraMarket App"
+}

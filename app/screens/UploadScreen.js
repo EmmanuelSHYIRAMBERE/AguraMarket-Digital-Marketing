@@ -20,7 +20,7 @@ function UploadScreen({ onDone, progress = 0, visible = false }) {
             autoPlay
             loop={false}
             onAnimationFinish={onDone}
-            source={require("../assets/animations/done.json")}
+            source={require("../assets/animations/Animation - 1706025415915 (2).json")}
             style={styles.animation}
           />
         )}
@@ -31,7 +31,7 @@ function UploadScreen({ onDone, progress = 0, visible = false }) {
 
 const styles = StyleSheet.create({
   animation: {
-    width: 150,
+    width: 350,
   },
   container: {
     alignItems: "center",

@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { Alert, Image, StyleSheet } from "react-native";
+import { Alert, Image, ScrollView, StyleSheet } from "react-native";
 import * as Yup from "yup";
 
 import {
@@ -53,41 +53,43 @@ function LoginScreen(props) {
   };
   return (
     <Screen style={styles.container}>
-      <Image
-        style={styles.logo}
-        source={require("../assets/images/image/hero-banner.png")}
-      />
-
-      <AppForm
-        initialValues={{ email: "", password: "" }}
-        validationSchema={validationSchema}
-        onSubmit={handleSubmit}
-      >
-        <ErrorMessage
-          error="Invalid emailand/or password."
-          visible={loginFailed}
-        />
-        <AppFormField
-          autoCapitalize="none"
-          autoCorrect={false}
-          icon="email"
-          keyboardType="email-address"
-          name="email"
-          placeholder="Email"
-          textContentType="emailAddress"
+      <ScrollView>
+        <Image
+          style={styles.logo}
+          source={require("../assets/images/image/hero-banner.png")}
         />
 
-        <AppFormField
-          autoCapitalize="none"
-          autoCorrect={false}
-          icon="lock"
-          name="password"
-          placeholder="Password"
-          secureTextEntry={true}
-          textContentType="password"
-        />
-        <SubmitButton title="Login" />
-      </AppForm>
+        <AppForm
+          initialValues={{ email: "", password: "" }}
+          validationSchema={validationSchema}
+          onSubmit={handleSubmit}
+        >
+          <ErrorMessage
+            error="Invalid emailand/or password."
+            visible={loginFailed}
+          />
+          <AppFormField
+            autoCapitalize="none"
+            autoCorrect={false}
+            icon="email"
+            keyboardType="email-address"
+            name="email"
+            placeholder="Email"
+            textContentType="emailAddress"
+          />
+
+          <AppFormField
+            autoCapitalize="none"
+            autoCorrect={false}
+            icon="lock"
+            name="password"
+            placeholder="Password"
+            secureTextEntry={true}
+            textContentType="password"
+          />
+          <SubmitButton title="Login" />
+        </AppForm>
+      </ScrollView>
     </Screen>
   );
 }

@@ -16,7 +16,7 @@ import ListItemSeparator from "../assets/ListItemSeparator";
 import ListItemUpdate from "../assets/components/ListItemDeleteIcon/ListItemUpdate";
 
 function UserProductsScreen({ navigation }) {
-  const getListingsApi = useApi(listingsApi.getListings);
+  const getListingsApi = useApi(listingsApi.getUserListings);
   const deleteListingsApi = useApi(listingsApi.deleteProduct);
 
   const [refreshing, setRefreshing] = useState(false);
@@ -35,7 +35,7 @@ function UserProductsScreen({ navigation }) {
           Alert.alert("Products deleted successfully");
         }
       } else {
-        console.error("Error deleting product");
+        console.error("Error deleting product", result);
       }
     } catch (error) {
       console.error("An error occurred while deleting the product", error);
@@ -78,7 +78,7 @@ function UserProductsScreen({ navigation }) {
 
 const styles = StyleSheet.create({
   screen: {
-    padding: 20,
+    padding: 5,
     backgroundColor: colors.light,
   },
 });

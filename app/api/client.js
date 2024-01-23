@@ -30,7 +30,6 @@ apiClient.get = async (url, params, axiosConfig) => {
   const storedProducts = await AsyncStorage.getItem("products");
   const data = await cache.get(url);
 
-  console.log("storedProducts", storedProducts);
   return data
     ? { ok: true, data }
     : storedProducts

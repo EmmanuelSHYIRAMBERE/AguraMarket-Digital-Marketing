@@ -17,7 +17,7 @@ const AccountNavigator = () => (
         headerShown: false,
       }}
     />
-    <Stack.Screen name="Products" component={UserProductsScreen} />
+    <Stack.Screen name="Products" component={UserProductsScreen}  />
     <Stack.Screen name="Messages" component={MessageScreen} />
     <Stack.Screen name="Tasks" component={TasksScreen} />
   </Stack.Navigator>
